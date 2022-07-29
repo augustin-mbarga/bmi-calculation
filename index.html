@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculation</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <section class="container">
+        <!-- Title -->
+        <h1 class="title"><span>BMI</span> calculation</h1>
+        
+        <!-- Form -->
+        <form>
+            <div class="inputs-container">
+                <!-- First input : height -->
+                <div class="input-group">
+                    <label for="height">Your height in centimeters</label>
+                    <input 
+                    type="number"
+                    placeholder="Your height in centimeters"
+                    id="height"
+                    class="height-input"
+                    >
+                </div>
+                <!-- Second input : weight -->
+                <div class="input-group">
+                    <label for="weight">Your weight in kilograms</label>
+                    <input 
+                    type="number"
+                    placeholder="Your weight in kilograms"
+                    id="weight"
+                    class="weight-input"
+                    >
+                </div>
+            </div>
+            <!-- Submit button -->
+            <button>Calculate a BMI</button>
+        </form>
+        <!-- Info area -->
+        <div class="info">
+            <p class="bmi-value">0</p>
+            <p class="result">Waiting for the result...</p>
+        </div>
+    </section>
+
+    <!-- JavaScript file link -->
+    <script src="./app.js"></script>
+</body>
+</html>
